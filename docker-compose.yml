@@ -4,7 +4,7 @@
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./:/usr/share/nginx/html
+      - ./:/data/www
     links:
       - php
 
@@ -12,7 +12,7 @@
     build: .
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./:/usr/share/nginx/html
+      - ./:/data/www
     links:
       - mysql
 
