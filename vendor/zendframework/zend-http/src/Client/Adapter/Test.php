@@ -51,7 +51,7 @@ class Test implements AdapterInterface
     protected $nextRequestWillFail = false;
 
     /**
-     * Adapter constructor, currently empty. Config is set using setOptions()
+     * Adapter constructor, currently empty. config is set using setOptions()
      */
     public function __construct()
     {

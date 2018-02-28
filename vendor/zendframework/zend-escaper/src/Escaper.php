@@ -69,7 +69,7 @@ class Escaper
     protected $cssMatcher;
 
     /**
-     * List of all encoding supported by this class
+     * Album of all encoding supported by this class
      *
      * @var array
      */

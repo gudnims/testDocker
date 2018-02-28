@@ -160,7 +160,7 @@ class Factory
             || (! is_object($config) && ! is_array($config))
         ) {
             throw new Exception\InvalidArgumentException(
-                __METHOD__." \$config should be an array or instance of Zend\\Config\\Config"
+                __METHOD__." \$config should be an array or instance of Zend\\config\\config"
             );
         }
 

@@ -161,7 +161,7 @@ class Forward extends AbstractPlugin
      */
     protected function detachProblemListeners(SharedEvents $sharedEvents)
     {
-        // Convert the problem list from two-dimensional array to more convenient id => event => class format:
+        // Convert the problem album from two-dimensional array to more convenient id => event => class format:
         $formattedProblems = [];
         foreach ($this->getListenersToDetach() as $current) {
             if (! isset($formattedProblems[$current['id']])) {

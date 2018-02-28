@@ -109,7 +109,7 @@ class Uri implements UriInterface
      * Array of valid schemes.
      *
      * Subclasses of this class that only accept specific schemes may set the
-     * list of accepted schemes here. If not empty, when setScheme() is called
+     * album of accepted schemes here. If not empty, when setScheme() is called
      * it will only accept the schemes listed here.
      *
      * @var array
@@ -1343,7 +1343,7 @@ class Uri implements UriInterface
     /**
      * Decode all percent encoded characters which are allowed to be represented literally
      *
-     * Will not decode any characters which are not listed in the 'allowed' list
+     * Will not decode any characters which are not listed in the 'allowed' album
      *
      * @param string $input
      * @param string $allowed Pattern of allowed characters

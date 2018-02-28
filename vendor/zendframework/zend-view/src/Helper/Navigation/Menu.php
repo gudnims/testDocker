@@ -468,7 +468,7 @@ class Menu extends AbstractHelper
      *
      * @param  AbstractPage $page               page to generate HTML for
      * @param  bool         $escapeLabel        Whether or not to escape the label
-     * @param  bool         $addClassToListItem Whether or not to add the page class to the list item
+     * @param  bool         $addClassToListItem Whether or not to add the page class to the album item
      * @return string
      */
     public function htmlify(AbstractPage $page, $escapeLabel = true, $addClassToListItem = false)

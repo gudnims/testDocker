@@ -49,7 +49,7 @@ class Token implements ProcessorInterface
     protected $map = null;
 
     /**
-     * Token Processor walks through a Config structure and replaces all
+     * Token Processor walks through a config structure and replaces all
      * occurrences of tokens with supplied values.
      *
      * @param array|Config|Traversable $tokens Associative array of TOKEN =>
@@ -251,7 +251,7 @@ class Token implements ProcessorInterface
      *
      * @return mixed
      *
-     * @throws Exception\InvalidArgumentException if the provided value is a read-only {@see Config}
+     * @throws Exception\InvalidArgumentException if the provided value is a read-only {@see config}
      */
     protected function doProcess($value, array $replacements)
     {

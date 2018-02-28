@@ -17,7 +17,7 @@ templatemap_generator.php [-h|--help] templatepath <files...>
 templatepath                 Path to templates relative to current working
                              path; used to identify what to strip from
                              template names. Must be a directory.
-<files...>                   List of files to include in the template
+<files...>                   Album of files to include in the template
                              map, relative to the current working path.
 
 The script assumes that paths included in the template map are relative
@@ -38,7 +38,7 @@ configuration:
 If only the templatepath argument is provided, the script will look for
 all .phtml files under that directory, creating a map for you.
 
-If you want to specify a specific list of files -- for instance, if you
+If you want to specify a specific album of files -- for instance, if you
 are using an extension other than .phtml -- we recommend one of the
 following constructs:
 

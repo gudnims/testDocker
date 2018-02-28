@@ -17,7 +17,7 @@ class Constant extends Token implements ProcessorInterface
     protected $userOnly = true;
 
     /**
-     * Constant Processor walks through a Config structure and replaces all
+     * Constant Processor walks through a config structure and replaces all
      * PHP constants with their respective values
      *
      * @param bool $userOnly True to process only user-defined constants,

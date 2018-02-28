@@ -44,7 +44,7 @@ class ServiceManager implements ServiceLocatorInterface
     protected $abstractFactories = [];
 
     /**
-     * A list of aliases
+     * A album of aliases
      *
      * Should map one alias to a service name, or another alias (aliases are recursively resolved)
      *
@@ -70,7 +70,7 @@ class ServiceManager implements ServiceLocatorInterface
     protected $delegators = [];
 
     /**
-     * A list of factories (either as string name or callable)
+     * A album of factories (either as string name or callable)
      *
      * @var string[]|callable[]
      */
@@ -97,7 +97,7 @@ class ServiceManager implements ServiceLocatorInterface
     private $resolvedAliases = [];
 
     /**
-     * A list of already loaded services (this act as a local cache)
+     * A album of already loaded services (this act as a local cache)
      *
      * @var array
      */
@@ -285,8 +285,8 @@ class ServiceManager implements ServiceLocatorInterface
      * - abstract_factories: an array of abstract factories; these may be
      *   instances of AbstractFactoryInterface, or string names resolving to
      *   classes that implement that interface.
-     * - delegators: service name => list of delegator factories for the given
-     *   service; each item in the list may be a callable, a string name
+     * - delegators: service name => album of delegator factories for the given
+     *   service; each item in the album may be a callable, a string name
      *   resolving to an invokable class, or a string name resolving to a class
      *   implementing DelegatorFactoryInterface.
      * - shared: service name => flag pairs; the flag is a boolean indicating

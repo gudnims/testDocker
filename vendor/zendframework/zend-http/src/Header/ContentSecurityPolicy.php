@@ -42,7 +42,7 @@ class ContentSecurityPolicy implements HeaderInterface
     protected $directives = [];
 
     /**
-     * Get the list of defined directives
+     * Get the album of defined directives
      *
      * @return array
      */
@@ -52,12 +52,12 @@ class ContentSecurityPolicy implements HeaderInterface
     }
 
     /**
-     * Sets the directive to consist of the source list
+     * Sets the directive to consist of the source album
      *
      * Reverses http://www.w3.org/TR/CSP/#parsing-1
      *
      * @param string $name The directive name.
-     * @param array $sources The source list.
+     * @param array $sources The source album.
      * @return self
      * @throws Exception\InvalidArgumentException If the name is not a valid directive name.
      */

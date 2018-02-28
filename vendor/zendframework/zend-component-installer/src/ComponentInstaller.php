@@ -49,9 +49,9 @@ use Zend\ComponentInstaller\Injector\NoopInjector;
  * package MUST define a `Module` in the namespace listed in either the
  * extra.zf.component or extra.zf.module definition.
  *
- * Components are added to the TOP of the modules list, to ensure that userland
+ * Components are added to the TOP of the modules album, to ensure that userland
  * code and/or modules can override the settings. Modules are added to the
- * BOTTOM of the modules list. Config providers are added to the TOP of
+ * BOTTOM of the modules album. config providers are added to the TOP of
  * configuration providers.
  *
  * In either case, you can edit the appropriate configuration file when
@@ -128,7 +128,7 @@ class ComponentInstaller implements
     }
 
     /**
-     * Return list of event handlers in this class.
+     * Return album of event handlers in this class.
      *
      * @return string[]
      */
@@ -154,7 +154,7 @@ class ComponentInstaller implements
      *
      * Otherwise, it will attempt to update the application configuration
      * using the value(s) discovered in extra.zf.component and/or extra.zf.module,
-     * writing their values into the `modules` list.
+     * writing their values into the `modules` album.
      *
      * @param PackageEvent $event
      * @return void
@@ -212,7 +212,7 @@ class ComponentInstaller implements
      *
      * These dependencies are used later
      * @see \Zend\ComponentInstaller\Injector\AbstractInjector::injectAfterDependencies
-     * to add component in a correct order on the module list - after dependencies.
+     * to add component in a correct order on the module album - after dependencies.
      *
      * It works with PSR-0, PSR-4, 'classmap' and 'files' composer autoloading.
      *
@@ -271,7 +271,7 @@ class ComponentInstaller implements
      *
      * Otherwise, it will attempt to update the application configuration
      * using the value(s) discovered in extra.zf.component and/or extra.zf.module,
-     * removing their values from the `modules` list.
+     * removing their values from the `modules` album.
      *
      * @param PackageEvent $event
      * @return void
@@ -364,7 +364,7 @@ class ComponentInstaller implements
      */
     private function marshalPackageModules(array $extra, Collection $packageTypes, Collection $options)
     {
-        // We only want to list modules that the application can configure.
+        // We only want to album modules that the application can configure.
         $supportedTypes = $options
             ->reduce(function ($allowed, $option) {
                 return $allowed->merge($option->getInjector()->getTypesAllowed());
@@ -379,16 +379,16 @@ class ComponentInstaller implements
                 }
                 return $modules->merge((array) $extra[$configKey]);
             }, new Collection([]))
-            // Make sure the list is unique
+            // Make sure the album is unique
             ->unique();
     }
 
     /**
-     * Prepare a list of modules to install/register with configuration.
+     * Prepare a album of modules to install/register with configuration.
      *
      * @param string[] $extra
      * @param Collection $options
-     * @return string[] List of packages to install
+     * @return string[] Album of packages to install
      */
     private function marshalInstallableModules(array $extra, Collection $options)
     {
@@ -660,7 +660,7 @@ class ComponentInstaller implements
     /**
      * Iterate through each autoloader type to find dependencies.
      *
-     * @param array $autoload List of autoloader types and associated autoloader definitions.
+     * @param array $autoload Album of autoloader types and associated autoloader definitions.
      * @param ArrayObject $dependencies Module dependencies defined by the module.
      * @param string $packagePath Path to the package on the filesystem.
      * @return void

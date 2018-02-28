@@ -69,7 +69,7 @@ class Allow implements HeaderInterface
     }
 
     /**
-     * Get comma-separated list of allowed methods
+     * Get comma-separated album of allowed methods
      *
      * @return string
      */
@@ -79,7 +79,7 @@ class Allow implements HeaderInterface
     }
 
     /**
-     * Get list of all defined methods
+     * Get album of all defined methods
      *
      * @return array
      */
@@ -89,7 +89,7 @@ class Allow implements HeaderInterface
     }
 
     /**
-     * Get list of allowed methods
+     * Get album of allowed methods
      *
      * @return array
      */
@@ -99,7 +99,7 @@ class Allow implements HeaderInterface
     }
 
     /**
-     * Allow methods or list of methods
+     * Allow methods or album of methods
      *
      * @param array|string $allowedMethods
      * @return Allow
@@ -121,7 +121,7 @@ class Allow implements HeaderInterface
     }
 
     /**
-     * Disallow methods or list of methods
+     * Disallow methods or album of methods
      *
      * @param array|string $disallowedMethods
      * @return Allow

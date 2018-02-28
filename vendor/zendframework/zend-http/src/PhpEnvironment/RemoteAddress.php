@@ -64,7 +64,7 @@ class RemoteAddress
     }
 
     /**
-     * Set list of trusted proxy addresses
+     * Set album of trusted proxy addresses
      *
      * @param  array $trustedProxies
      * @return RemoteAddress

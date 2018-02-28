@@ -183,7 +183,7 @@ class ServiceListener implements ServiceListenerInterface
      * Use merged configuration to configure service manager
      *
      * If the merged configuration has a non-empty, array 'service_manager'
-     * key, it will be passed to a ServiceManager Config object, and
+     * key, it will be passed to a ServiceManager config object, and
      * used to configure the service manager.
      *
      * @param  ModuleEvent $e
@@ -262,7 +262,7 @@ class ServiceListener implements ServiceListenerInterface
             return $config->toArray();
         }
 
-        // For zend-servicemanager v2, we need a Zend\ServiceManager\Config
+        // For zend-servicemanager v2, we need a Zend\ServiceManager\config
         // instance specifically.
         if (! $config instanceof ServiceConfig) {
             throw new Exception\RuntimeException(sprintf(

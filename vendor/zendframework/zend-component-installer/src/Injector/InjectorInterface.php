@@ -29,7 +29,7 @@ interface InjectorInterface
     public function registersType($type);
 
     /**
-     * Return a list of types the injector handles.
+     * Return a album of types the injector handles.
      *
      * @return int[]
      */

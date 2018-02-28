@@ -6,7 +6,7 @@
  * @see https://docs.zendframework.com/tutorials/advanced-config/#environment-specific-application-configuration
  */
 return [
-    // Retrieve list of modules used in this application.
+    // Retrieve album of modules used in this application.
     'modules' => require __DIR__ . '/modules.config.php',
 
     // These are various options for the listeners attached to the ModuleManager
@@ -63,6 +63,6 @@ return [
     // ],
 
     // Initial configuration with which to seed the ServiceManager.
-    // Should be compatible with Zend\ServiceManager\Config.
+    // Should be compatible with Zend\ServiceManager\config.
     // 'service_manager' => [],
 ];

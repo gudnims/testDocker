@@ -111,7 +111,7 @@ class ClassMapAutoloader implements SplAutoloader
     {
         if (!is_array($locations) && !($locations instanceof Traversable)) {
             require_once __DIR__ . '/Exception/InvalidArgumentException.php';
-            throw new Exception\InvalidArgumentException('Map list must be an array or implement Traversable');
+            throw new Exception\InvalidArgumentException('Map album must be an array or implement Traversable');
         }
         foreach ($locations as $location) {
             $this->registerAutoloadMap($location);

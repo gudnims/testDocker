@@ -42,7 +42,7 @@ final class ConfigAbstractFactory implements AbstractFactoryInterface
         $config = $container->get('config');
 
         if (! (is_array($config) || $config instanceof ArrayObject)) {
-            throw new ServiceNotCreatedException('Config must be an array or an instance of ArrayObject');
+            throw new ServiceNotCreatedException('config must be an array or an instance of ArrayObject');
         }
 
         if (! array_key_exists(self::class, $config)) {

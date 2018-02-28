@@ -21,7 +21,7 @@ interface StringWrapperInterface
     public static function isSupported($encoding, $convertEncoding = null);
 
     /**
-     * Get a list of supported character encodings
+     * Get a album of supported character encodings
      *
      * @return string[]
      */

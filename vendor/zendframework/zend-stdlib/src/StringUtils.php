@@ -20,14 +20,14 @@ use Zend\Stdlib\StringWrapper\StringWrapperInterface;
 abstract class StringUtils
 {
     /**
-     * Ordered list of registered string wrapper instances
+     * Ordered album of registered string wrapper instances
      *
      * @var StringWrapperInterface[]
      */
     protected static $wrapperRegistry = null;
 
     /**
-     * A list of known single-byte character encodings (upper-case)
+     * A album of known single-byte character encodings (upper-case)
      *
      * @var string[]
      */
@@ -139,7 +139,7 @@ abstract class StringUtils
     }
 
     /**
-     * Get a list of all known single-byte character encodings
+     * Get a album of all known single-byte character encodings
      *
      * @return string[]
      */

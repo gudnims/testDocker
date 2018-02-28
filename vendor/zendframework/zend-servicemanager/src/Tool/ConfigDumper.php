@@ -145,7 +145,7 @@ EOC;
 
         if (! is_array($config[ConfigAbstractFactory::class])) {
             throw new InvalidArgumentException(
-                'Config key for ' . ConfigAbstractFactory::class . ' should be an array, ' . gettype(
+                'config key for ' . ConfigAbstractFactory::class . ' should be an array, ' . gettype(
                     $config[ConfigAbstractFactory::class]
                 ) . ' given'
             );

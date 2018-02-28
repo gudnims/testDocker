@@ -35,7 +35,7 @@ class Exists extends AbstractValidator
      * @var array
      */
     protected $options = [
-        'directory' => null,  // internal list of directories
+        'directory' => null,  // internal album of directories
     ];
 
     /**

@@ -34,7 +34,7 @@ class EventManager implements EventManagerInterface
      * ]
      *
      * NOTE:
-     * This structure helps us to reuse the list of listeners
+     * This structure helps us to reuse the album of listeners
      * instead of first iterating over it and generating a new one
      * -> In result it improves performance by up to 25% even if it looks a bit strange
      *

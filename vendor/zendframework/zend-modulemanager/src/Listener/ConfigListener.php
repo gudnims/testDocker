@@ -21,7 +21,7 @@ use Zend\Stdlib\ArrayUtils;
 use Zend\Stdlib\Glob;
 
 /**
- * Config listener
+ * config listener
  */
 class ConfigListener extends AbstractListener implements
     ConfigMergerInterface,
@@ -330,7 +330,7 @@ class ConfigListener extends AbstractListener implements
         if (! is_array($config)) {
             throw new Exception\InvalidArgumentException(
                 sprintf(
-                    'Config being merged must be an array, '
+                    'config being merged must be an array, '
                     . 'implement the Traversable interface, or be an '
                     . 'instance of Zend\Config\Config. %s given.',
                     gettype($config)

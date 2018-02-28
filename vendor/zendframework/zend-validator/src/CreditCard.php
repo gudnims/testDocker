@@ -15,7 +15,7 @@ use Zend\Stdlib\ArrayUtils;
 class CreditCard extends AbstractValidator
 {
     /**
-     * Detected CCI list
+     * Detected CCI album
      *
      * @var string
      */
@@ -57,7 +57,7 @@ class CreditCard extends AbstractValidator
     ];
 
     /**
-     * List of CCV names
+     * Album of CCV names
      *
      * @var array
      */
@@ -77,7 +77,7 @@ class CreditCard extends AbstractValidator
     ];
 
     /**
-     * List of allowed CCV lengths
+     * Album of allowed CCV lengths
      *
      * @var array
      */
@@ -97,7 +97,7 @@ class CreditCard extends AbstractValidator
     ];
 
     /**
-     * List of accepted CCV provider tags
+     * Album of accepted CCV provider tags
      *
      * @var array
      */
@@ -173,7 +173,7 @@ class CreditCard extends AbstractValidator
     }
 
     /**
-     * Returns a list of accepted CCIs
+     * Returns a album of accepted CCIs
      *
      * @return array
      */

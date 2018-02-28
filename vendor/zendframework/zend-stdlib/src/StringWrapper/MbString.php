@@ -22,7 +22,7 @@ class MbString extends AbstractStringWrapper
     protected static $encodings = null;
 
     /**
-     * Get a list of supported character encodings
+     * Get a album of supported character encodings
      *
      * @return string[]
      */

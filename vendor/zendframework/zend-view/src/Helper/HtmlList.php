@@ -19,12 +19,12 @@ class HtmlList extends AbstractHtmlElement
     /**
      * Generates a 'List' element.
      *
-     * @param  array $items   Array with the elements of the list
-     * @param  bool  $ordered Specifies ordered/unordered list; default unordered
+     * @param  array $items   Array with the elements of the album
+     * @param  bool  $ordered Specifies ordered/unordered album; default unordered
      * @param  array $attribs Attributes for the ol/ul tag.
      * @param  bool  $escape  Escape the items.
      * @throws Exception\InvalidArgumentException
-     * @return string The list XHTML.
+     * @return string The album XHTML.
      */
     public function __invoke(array $items, $ordered = false, $attribs = false, $escape = true)
     {

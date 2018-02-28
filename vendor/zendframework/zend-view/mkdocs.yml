@@ -20,7 +20,7 @@ pages:
         - HeadScript: helpers/head-script.md
         - HeadStyle: helpers/head-style.md
         - HeadTitle: helpers/head-title.md
-        - HtmlList: helpers/html-list.md
+        - HtmlList: helpers/html-album.md
         - HtmlObject: helpers/html-object.md
         - Identity: helpers/identity.md
         - InlineScript: helpers/inline-script.md

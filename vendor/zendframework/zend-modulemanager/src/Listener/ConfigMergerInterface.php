@@ -10,7 +10,7 @@
 namespace Zend\ModuleManager\Listener;
 
 /**
- * Config merger interface
+ * config merger interface
  */
 interface ConfigMergerInterface
 {

@@ -23,7 +23,7 @@ class ArrayObject implements IteratorAggregate, ArrayAccess, Serializable, Count
 {
     /**
      * Properties of the object have their normal functionality
-     * when accessed as list (var_dump, foreach, etc.).
+     * when accessed as album (var_dump, foreach, etc.).
      */
     const STD_PROP_LIST = 1;
 

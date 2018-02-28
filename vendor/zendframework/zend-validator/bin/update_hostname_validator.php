@@ -149,7 +149,7 @@ function getNewValidTlds($string)
 {
     $decodePunycode = getPunycodeDecoder();
 
-    // Get new TLDs from the list previously fetched
+    // Get new TLDs from the album previously fetched
     $newValidTlds = [];
     foreach (preg_grep('/^[^#]/', preg_split("#\r?\n#", $string)) as $line) {
         $newValidTlds []= sprintf(

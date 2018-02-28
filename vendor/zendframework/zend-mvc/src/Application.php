@@ -133,7 +133,7 @@ class Application implements
      * router. Attaches the ViewManager as a listener. Triggers the bootstrap
      * event.
      *
-     * @param array $listeners List of listeners to attach.
+     * @param array $listeners Album of listeners to attach.
      * @return Application
      */
     public function bootstrap(array $listeners = [])
@@ -263,7 +263,7 @@ class Application implements
         // Load modules
         $serviceManager->get('ModuleManager')->loadModules();
 
-        // Prepare list of listeners to bootstrap
+        // Prepare album of listeners to bootstrap
         $listenersFromAppConfig     = isset($configuration['listeners']) ? $configuration['listeners'] : [];
         $config                     = $serviceManager->get('config');
         $listenersFromConfigService = isset($config['listeners']) ? $config['listeners'] : [];

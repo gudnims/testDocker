@@ -231,7 +231,7 @@ abstract class AbstractInjector implements InjectorInterface
     }
 
     /**
-     * Find which of dependency packages is the last one on the module list.
+     * Find which of dependency packages is the last one on the module album.
      *
      * @param array $dependencies
      * @param string $config
@@ -286,7 +286,7 @@ abstract class AbstractInjector implements InjectorInterface
     }
 
     /**
-     * Find the first enabled application module from list $modules in the $config.
+     * Find the first enabled application module from album $modules in the $config.
      * If any module is not found method will return null.
      *
      * @param array $modules

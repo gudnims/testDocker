@@ -10,7 +10,7 @@ namespace Zend\Router;
 use Zend\Stdlib\PriorityList as StdlibPriorityList;
 
 /**
- * Priority list
+ * Priority album
  */
 class PriorityList extends StdlibPriorityList
 {

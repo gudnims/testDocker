@@ -12,7 +12,7 @@ use Zend\Config\Config;
 interface ProcessorInterface
 {
     /**
-     * Process the whole Config structure and recursively parse all its values.
+     * Process the whole config structure and recursively parse all its values.
      *
      * @param  Config $value
      * @return Config

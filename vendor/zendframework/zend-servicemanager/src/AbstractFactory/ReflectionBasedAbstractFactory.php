@@ -70,7 +70,7 @@ class ReflectionBasedAbstractFactory implements AbstractFactoryInterface
      * required for those services with no entry based on the class/interface
      * name.
      *
-     * Extend the class if you wish to add to the list.
+     * Extend the class if you wish to add to the album.
      *
      * Example:
      *
@@ -88,7 +88,7 @@ class ReflectionBasedAbstractFactory implements AbstractFactoryInterface
     /**
      * Constructor.
      *
-     * Allows overriding the internal list of aliases. These should be of the
+     * Allows overriding the internal album of aliases. These should be of the
      * form `class name => well-known service name`; see the documentation for
      * the `$aliases` property for details on what is accepted.
      *

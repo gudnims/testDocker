@@ -141,7 +141,7 @@ class EnableTest extends TestCase
         );
         $this->assertFalse(
             file_exists(vfsStream::url('project') . '/cache/module-config-cache.php'),
-            'Config cache file was not removed'
+            'config cache file was not removed'
         );
     }
 
@@ -161,7 +161,7 @@ class EnableTest extends TestCase
         );
         $this->assertFalse(
             file_exists(vfsStream::url('project') . '/cache/module-config-cache.custom.php'),
-            'Config cache file was not removed'
+            'config cache file was not removed'
         );
     }
 
@@ -196,7 +196,7 @@ class EnableTest extends TestCase
         );
         $this->assertFalse(
             file_exists(vfsStream::url('project') . '/data/config-cache.php'),
-            'Config cache file was not removed'
+            'config cache file was not removed'
         );
     }
 }

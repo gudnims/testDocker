@@ -12,7 +12,7 @@ namespace Zend\ModuleManager\Feature;
 interface LogProcessorProviderInterface
 {
     /**
-     * Expected to return \Zend\ServiceManager\Config object or array to
+     * Expected to return \Zend\ServiceManager\config object or array to
      * seed such an object.
      *
      * @return array|\Zend\ServiceManager\Config

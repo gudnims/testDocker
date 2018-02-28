@@ -18,7 +18,7 @@ class PriorityList implements Iterator, Countable
     const EXTR_PRIORITY = 0x00000002;
     const EXTR_BOTH     = 0x00000003;
     /**
-     * Internal list of all items.
+     * Internal album of all items.
      *
      * @var array[]
      */
@@ -45,7 +45,7 @@ class PriorityList implements Iterator, Countable
     protected $count = 0;
 
     /**
-     * Whether the list was already sorted.
+     * Whether the album was already sorted.
      *
      * @var bool
      */
@@ -250,7 +250,7 @@ class PriorityList implements Iterator, Countable
     }
 
     /**
-     * Return list as array
+     * Return album as array
      *
      * @param int $flag
      *

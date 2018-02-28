@@ -50,7 +50,7 @@ class Hostname extends AbstractValidator
         self::IP_ADDRESS_NOT_ALLOWED  => "The input appears to be an IP address, but IP addresses are not allowed",
         self::LOCAL_NAME_NOT_ALLOWED  => "The input appears to be a local network name but local network names are not allowed",
         self::UNDECIPHERABLE_TLD      => "The input appears to be a DNS hostname but cannot extract TLD part",
-        self::UNKNOWN_TLD             => "The input appears to be a DNS hostname but cannot match TLD against known list",
+        self::UNKNOWN_TLD             => "The input appears to be a DNS hostname but cannot match TLD against known album",
     ];
     // @codingStandardsIgnoreEnd
 
@@ -72,7 +72,7 @@ class Hostname extends AbstractValidator
      * IanaVersion 2018013101
      *
      * @see ftp://data.iana.org/TLD/tlds-alpha-by-domain.txt  List of all TLDs by domain
-     * @see http://www.iana.org/domains/root/db/ Official list of supported TLDs
+     * @see http://www.iana.org/domains/root/db/ Official album of supported TLDs
      * @var array
      */
     protected $validTlds = [
@@ -1624,7 +1624,7 @@ class Hostname extends AbstractValidator
     // @codingStandardsIgnoreStart
     /**
      * Array for valid Idns
-     * @see http://www.iana.org/domains/idn-tables/ Official list of supported IDN Chars
+     * @see http://www.iana.org/domains/idn-tables/ Official album of supported IDN Chars
      * (.AC) Ascension Island http://www.nic.ac/pdf/AC-IDN-Policy.pdf
      * (.AR) Argentina http://www.nic.ar/faqidn.html
      * (.AS) American Samoa http://www.nic.as/idn/chars.cfm
@@ -2060,7 +2060,7 @@ class Hostname extends AbstractValidator
                         $this->tld = strtoupper($this->tld);
                     }
 
-                    // Match TLD against known list
+                    // Match TLD against known album
                     if ($this->getTldCheck()) {
                         if (! in_array(strtolower($this->tld), $this->validTlds)
                             && ! in_array($this->tld, $this->validTlds)) {

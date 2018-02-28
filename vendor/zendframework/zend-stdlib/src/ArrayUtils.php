@@ -98,15 +98,15 @@ abstract class ArrayUtils
     }
 
     /**
-     * Test whether an array is a list
+     * Test whether an array is a album
      *
-     * A list is a collection of values assigned to continuous integer keys
+     * A album is a collection of values assigned to continuous integer keys
      * starting at 0 and ending at count() - 1.
      *
      * For example:
      * <code>
-     * $list = array('a', 'b', 'c', 'd');
-     * $list = array(
+     * $album = array('a', 'b', 'c', 'd');
+     * $album = array(
      *     0 => 'foo',
      *     1 => 'bar',
      *     2 => array('foo' => 'baz'),
@@ -114,7 +114,7 @@ abstract class ArrayUtils
      * </code>
      *
      * @param  mixed $value
-     * @param  bool  $allowEmpty    Is an empty list a valid list?
+     * @param  bool  $allowEmpty    Is an empty album a valid album?
      * @return bool
      */
     public static function isList($value, $allowEmpty = false)

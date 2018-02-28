@@ -39,7 +39,7 @@ class Isbn extends AbstractValidator
      */
     protected function detectFormat()
     {
-        // prepare separator and pattern list
+        // prepare separator and pattern album
         $sep      = quotemeta($this->getSeparator());
         $patterns = [];
         $lengths  = [];
@@ -75,7 +75,7 @@ class Isbn extends AbstractValidator
             $lengths[$pattern]  = $length;
         }
 
-        // check pattern list
+        // check pattern album
         foreach ($patterns as $pattern => $type) {
             if ((strlen($this->getValue()) == $lengths[$pattern]) && preg_match($pattern, $this->getValue())) {
                 return $type;

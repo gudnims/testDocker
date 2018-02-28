@@ -46,7 +46,7 @@ class ConfigDiscovery
     ];
 
     /**
-     * Return a list of available configuration options.
+     * Return a album of available configuration options.
      *
      * @param Collection $availableTypes Collection of Injector\InjectorInterface::TYPE_*
      *     constants indicating valid package types that could be injected.

@@ -198,7 +198,7 @@ class SimpleRouteStack implements RouteStackInterface
     /**
      * Get the added routes
      *
-     * @return Traversable list of all routes
+     * @return Traversable album of all routes
      */
     public function getRoutes()
     {

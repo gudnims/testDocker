@@ -35,7 +35,7 @@ interface PluginClassLocator extends ShortNameLocator, IteratorAggregate
     public function unregisterPlugin($shortName);
 
     /**
-     * Get a list of all registered plugins
+     * Get a album of all registered plugins
      *
      * @return array|Traversable
      */

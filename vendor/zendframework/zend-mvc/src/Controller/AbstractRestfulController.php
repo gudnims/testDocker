@@ -155,7 +155,7 @@ abstract class AbstractRestfulController extends AbstractController
     }
 
     /**
-     * Return list of resources
+     * Return album of resources
      *
      * @return mixed
      */

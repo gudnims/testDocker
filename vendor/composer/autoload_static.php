@@ -37,6 +37,7 @@ class ComposerStaticInita8cc1eb006499ec5706bab0adf0e8af6
         array (
             'Application\\' => 12,
             'ApplicationTest\\' => 16,
+            'Album\\' => 6,
         ),
     );
 
@@ -116,6 +117,10 @@ class ComposerStaticInita8cc1eb006499ec5706bab0adf0e8af6
         'ApplicationTest\\' => 
         array (
             0 => __DIR__ . '/../..' . '/module/Application/test',
+        ),
+        'Album\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/module/Album/src',
         ),
     );
 

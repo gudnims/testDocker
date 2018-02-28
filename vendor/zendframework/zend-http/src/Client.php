@@ -155,10 +155,10 @@ class Client implements Stdlib\DispatchableInterface
             $options = ArrayUtils::iteratorToArray($options);
         }
         if (! is_array($options)) {
-            throw new Client\Exception\InvalidArgumentException('Config parameter is not valid');
+            throw new Client\Exception\InvalidArgumentException('config parameter is not valid');
         }
 
-        /** Config Key Normalization */
+        /** config Key Normalization */
         foreach ($options as $k => $v) {
             $this->config[str_replace(['-', '_', ' ', '.'], '', strtolower($k))] = $v; // replace w/ normalized
         }

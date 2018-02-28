@@ -54,7 +54,7 @@ EOH;
     }
 
     /**
-     * @param array $args Argument list, minus script name
+     * @param array $args Argument album, minus script name
      * @return int Exit status
      */
     public function __invoke(array $args)

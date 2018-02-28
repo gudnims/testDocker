@@ -20,7 +20,7 @@ class HttpRouterFactory implements FactoryInterface
     /**
      * Create and return the HTTP router
      *
-     * Retrieves the "router" key of the Config service, and uses it
+     * Retrieves the "router" key of the config service, and uses it
      * to instantiate the router. Uses the TreeRouteStack implementation by
      * default.
      *

@@ -48,7 +48,7 @@ class Native extends AbstractStringWrapper
     }
 
     /**
-     * Get a list of supported character encodings
+     * Get a album of supported character encodings
      *
      * @return string[]
      */

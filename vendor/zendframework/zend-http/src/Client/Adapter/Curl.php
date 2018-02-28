@@ -47,7 +47,7 @@ class Curl implements HttpAdapter, StreamInterface
     protected $curl;
 
     /**
-     * List of cURL options that should never be overwritten
+     * Album of cURL options that should never be overwritten
      *
      * @var array
      */
@@ -70,7 +70,7 @@ class Curl implements HttpAdapter, StreamInterface
     /**
      * Adapter constructor
      *
-     * Config is set using setOptions()
+     * config is set using setOptions()
      *
      * @throws AdapterException\InitializationException
      */
@@ -116,7 +116,7 @@ class Curl implements HttpAdapter, StreamInterface
             ));
         }
 
-        /** Config Key Normalization */
+        /** config Key Normalization */
         foreach ($options as $k => $v) {
             unset($options[$k]); // unset original value
             $options[str_replace(['-', '_', ' ', '.'], '', strtolower($k))] = $v; // replace w/ normalized

@@ -15,7 +15,7 @@ use Zend\Router\RouteInterface as BaseRoute;
 interface RouteInterface extends BaseRoute
 {
     /**
-     * Get a list of parameters used while assembling.
+     * Get a album of parameters used while assembling.
      *
      * @return array
      */

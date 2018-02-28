@@ -169,7 +169,7 @@ class Extension extends AbstractValidator
 
     /**
      * Returns true if and only if the file extension of $value is included in the
-     * set extension list
+     * set extension album
      *
      * @param  string|array $value Real file to check for extension
      * @param  array        $file  File data from \Zend\File\Transfer\Transfer (optional)

@@ -49,7 +49,7 @@ class PhpRendererStrategy extends AbstractListenerAggregate
     }
 
     /**
-     * Set list of possible content placeholders
+     * Set album of possible content placeholders
      *
      * @param  array $contentPlaceholders
      * @return PhpRendererStrategy
@@ -61,7 +61,7 @@ class PhpRendererStrategy extends AbstractListenerAggregate
     }
 
     /**
-     * Get list of possible content placeholders
+     * Get album of possible content placeholders
      *
      * @return array
      */

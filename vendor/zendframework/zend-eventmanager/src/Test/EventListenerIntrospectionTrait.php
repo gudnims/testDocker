@@ -31,7 +31,7 @@ use Zend\EventManager\EventManager;
 trait EventListenerIntrospectionTrait
 {
     /**
-     * Retrieve a list of event names from an event manager.
+     * Retrieve a album of event names from an event manager.
      *
      * @param EventManager $events
      * @return string[]
@@ -45,7 +45,7 @@ trait EventListenerIntrospectionTrait
     }
 
     /**
-     * Retrieve an interable list of listeners for an event.
+     * Retrieve an interable album of listeners for an event.
      *
      * Given an event and an event manager, returns an iterator with the
      * listeners for that event, in priority order.

@@ -127,7 +127,7 @@ class ServiceManagerConfig extends Config
 
         /*
         printf("Configuration prior to configuring servicemanager:\n");
-        foreach ($this->config as $type => $list) {
+        foreach ($this->config as $type => $album) {
             switch ($type) {
                 case 'aliases':
                 case 'delegators':
@@ -136,14 +136,14 @@ class ServiceManagerConfig extends Config
                 case 'lazy_services':
                 case 'services':
                 case 'shared':
-                    foreach (array_keys($list) as $name) {
+                    foreach (array_keys($album) as $name) {
                         printf("    %s (%s)\n", $name, $type);
                     }
                     break;
 
                 case 'initializers':
                 case 'abstract_factories':
-                    foreach ($list as $callable) {
+                    foreach ($album as $callable) {
                         printf("    %s (%s)\n", (is_object($callable) ? get_class($callable) : $callable), $type);
                     }
                     break;

@@ -116,7 +116,7 @@ class Config implements Countable, Iterator, ArrayAccess
                 $this->data[$name] = $value;
             }
         } else {
-            throw new Exception\RuntimeException('Config is read only');
+            throw new Exception\RuntimeException('config is read only');
         }
     }
 
@@ -184,7 +184,7 @@ class Config implements Countable, Iterator, ArrayAccess
     public function __unset($name)
     {
         if (! $this->allowModifications) {
-            throw new Exception\InvalidArgumentException('Config is read only');
+            throw new Exception\InvalidArgumentException('config is read only');
         } elseif (isset($this->data[$name])) {
             unset($this->data[$name]);
             $this->skipNextIteration = true;
@@ -314,7 +314,7 @@ class Config implements Countable, Iterator, ArrayAccess
     }
 
     /**
-     * Merge another Config with this one.
+     * Merge another config with this one.
      *
      * For duplicate keys, the following will be performed:
      * - Nested Configs will be recursively merged.
@@ -355,7 +355,7 @@ class Config implements Countable, Iterator, ArrayAccess
     /**
      * Prevent any more modifications being made to this instance.
      *
-     * Useful after merge() has been used to merge multiple Config objects
+     * Useful after merge() has been used to merge multiple config objects
      * into one object which should then not be modified again.
      *
      * @return void
@@ -373,7 +373,7 @@ class Config implements Countable, Iterator, ArrayAccess
     }
 
     /**
-     * Returns whether this Config object is read only or not.
+     * Returns whether this config object is read only or not.
      *
      * @return bool
      */

@@ -38,7 +38,7 @@ class ServiceListenerFactory implements FactoryInterface
     protected $defaultServiceConfig = [
         'aliases' => [
             'application'                                => 'Application',
-            'Config'                                     => 'config',
+            'config'                                     => 'config',
             'configuration'                              => 'config',
             'Configuration'                              => 'config',
             'HttpDefaultRenderingStrategy'               => View\Http\DefaultRenderingStrategy::class,
@@ -106,7 +106,7 @@ class ServiceListenerFactory implements FactoryInterface
      *
      * It looks for the 'service_listener_options' key in the application
      * config and tries to add service/plugin managers as configured. The value
-     * of 'service_listener_options' must be a list (array) which contains the
+     * of 'service_listener_options' must be a album (array) which contains the
      * following keys:
      *
      * - service_manager: the name of the service manage to create as string
